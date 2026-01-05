@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Runtime;
-
-namespace LauncherAPI
+﻿namespace LauncherAPI
 {
     public class VersionService
     {
