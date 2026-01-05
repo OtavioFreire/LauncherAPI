@@ -2,7 +2,7 @@
 {
     public class ClientInformation
     {
-        public int Id { get; set; } = 0;
-        public string VersionNumber { get; set; } = "";
+        public string cnpj { get; set; } = "";
+        public string versionNumber { get; set; } = "";
     }
 }

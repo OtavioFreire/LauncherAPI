@@ -18,12 +18,12 @@ namespace LauncherAPI
 
 
         [HttpGet("latest")]
-        public IActionResult Latest([FromQuery] int idClient, string version)
+        public IActionResult Latest([FromQuery] string cnpj, string version)
         {
             if (string.IsNullOrWhiteSpace(version))
                 return BadRequest("Versão não informada");
 
-            LastestResponse lastestResponse = VersionService.Latest(_settings, idClient, version);
+            LastestResponse lastestResponse = VersionService.Latest(_settings, cnpj, version);
 
             return Ok(lastestResponse);
         }
